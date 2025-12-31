@@ -7,52 +7,62 @@
 
   <style>
     body {
-      font-family: 'Apple SD Gothic Neo', sans-serif;
       margin: 0;
+      font-family: 'Apple SD Gothic Neo', sans-serif;
       background-color: #f5f7fa;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
-      background-color: #1e3a8a;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 36px;
     }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #1e3a8a;
+      margin-bottom: 20px;
+    }
+
     .cards {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
-      justify-content: center;
     }
+
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 10px;
-      width: 100%;
-      max-width: 400px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 25px;
+      flex: 1;
+      min-width: 250px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
-    button {
-      margin-top: 10px;
-      padding: 10px;
-      border: none;
-      background-color: #2563eb;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #1e40af;
-    }
+
     footer {
+      background-color: #111827;
+      color: #d1d5db;
       text-align: center;
-      padding: 20px;
-      background-color: #e5e7eb;
+      padding: 30px 20px;
+      margin-top: 80px;
       font-size: 14px;
     }
   </style>
@@ -60,35 +70,51 @@
 
 <body>
 
-<header>
-  <h1>AI 기반 항공·호텔 서비스</h1>
-  <p>AI 기술로 변화하는 서비스 산업의 미래</p>
-</header>
+  <header>
+    <h1>AI Air Hotel Service</h1>
+    <p>인공지능 기반 맞춤형 항공·호텔 고객 서비스</p>
+  </header>
 
-<section>
-  <h2>왜 AI가 중요한가?</h2>
-  <p>
-    AI는 고객 데이터를 분석하여 맞춤형 서비스를 제공하고,
-    서비스 품질과 운영 효율성을 동시에 향상시킵니다.
-  </p>
-</section>
+  <section>
+    <h2>서비스 개요</h2>
+    <p>
+      AI Air Hotel Service는 인공지능 기술을 활용하여
+      항공 및 호텔 이용 고객에게 개인 맞춤형 서비스를 제공하는 플랫폼입니다.
+      체크인부터 여행 종료까지, 고객 경험 전반을 개선하는 것을 목표로 합니다.
+    </p>
+  </section>
 
-<section class="cards">
-  <div class="card">
-    <h3>✈️ 항공 서비스</h3>
-    <p>AI 챗봇, 자동 체크인, 맞춤형 좌석 추천</p>
-  </div>
+  <section>
+    <h2>주요 기능</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>AI 체크인 서비스</h3>
+        <p>대기 시간을 줄이고 고객 정보를 기반으로 빠르고 정확한 체크인을 제공합니다.</p>
+      </div>
 
-  <div class="card">
-    <h3>🏨 호텔 서비스</h3>
-    <p>AI 컨시어지, 고객 선호 분석, 스마트 객실</p>
-  </div>
-</section>
+      <div class="card">
+        <h3>맞춤형 객실·좌석 추천</h3>
+        <p>이용 이력과 선호도를 분석해 최적의 좌석과 객실을 추천합니다.</p>
+      </div>
 
-<footer>
-  <p>제작자: 조아현</p>
-  <p>GitHub Pages 웹 콘텐츠 과제</p>
-</footer>
+      <div class="card">
+        <h3>24시간 AI 고객 응대</h3>
+        <p>언제든지 가능한 AI 챗봇을 통해 고객 문의를 신속하게 해결합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>기획 의도</h2>
+    <p>
+      본 웹사이트는 항공·호텔 서비스 전공자로서
+      디지털 기술과 고객 서비스를 결합한 미래형 서비스 모델을 제안하기 위해 제작되었습니다.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 AI Air Hotel Service Portfolio
+  </footer>
 
 </body>
 </html>
